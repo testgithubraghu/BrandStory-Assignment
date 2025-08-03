@@ -1,0 +1,23 @@
+@import url('https://cdn.jsdelivr.net/gh/drinking-code/HK-Grotesk-Web/font.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply HK Grotesk globally */
+body {
+  font-family: 'HK Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+}
+
+/* Global background and text color */
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
