@@ -14,7 +14,7 @@ const SectionContainer = ({ children, className = "" }) => (
   </section>
 );
 
-const SEOPartnerSection = () => {
+export default function SEOPartnerSection() {
   const features = [
     {
       description:
@@ -93,8 +93,8 @@ const SEOPartnerSection = () => {
                         <Image
                           src={feature.descriptionBgImage}
                           alt="Background"
-                           width={450}
-                        height={450}
+                          width={450}
+                          height={450}
                           className="absolute inset-0 w-full h-full object-cover z-0"
                         />
                         <div className="relative z-10 items-center justify-center">
@@ -224,6 +224,4 @@ const SEOPartnerSection = () => {
       </div>
     </SectionContainer>
   );
-};
-
-export default SEOPartnerSection;
+}

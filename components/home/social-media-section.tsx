@@ -12,7 +12,7 @@ export default function SocialMediaSection() {
     },
     {
       id: 2,
-      src: "/images/linkedin-icon.png", 
+      src: "/images/linkedin-icon.png",
       alt: "LinkedIn",
       href: "#",
     },
@@ -24,7 +24,7 @@ export default function SocialMediaSection() {
     },
     {
       id: 4,
-      src: "/images/facebook-icon.png", 
+      src: "/images/facebook-icon.png",
       alt: "Facebook",
       href: "#",
     },

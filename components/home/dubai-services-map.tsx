@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 
 // Reusable Section Container
-const SectionContainer = ({ children }) => (
-  <section className={`relative py-16 lg:py-20`}>
+const SectionContainer = ({ children, className = "" }) => (
+  <section className={`relative py-16 lg:py-20 ${className}`}>
     <div className="container mx-auto relative z-10">
       <div className="px-1 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-20">
         {children}
@@ -13,7 +13,7 @@ const SectionContainer = ({ children }) => (
   </section>
 );
 
-const DubaiServicesMap = () => {
+export default function DubaiServicesMap() {
   // Real Dubai locations with actual coordinates
   const locations = [
     {
@@ -253,6 +253,4 @@ const DubaiServicesMap = () => {
       `}</style>
     </SectionContainer>
   );
-};
-
-export default DubaiServicesMap;
+}
